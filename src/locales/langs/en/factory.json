@@ -1,0 +1,389 @@
+{
+  "nav": {
+    "dashboard": "Production control tower",
+    "newOrder": "New work order",
+    "dispatch": "Dispatch",
+    "live": "Live machine tracking",
+    "sequence": "Sequence optimization",
+    "inbox": "Customer inbox"
+  },
+  "crumb": {
+    "operations": "Operations",
+    "orders": "Work orders",
+    "planning": "Planning",
+    "customers": "Customers"
+  },
+  "common": {
+    "approve": "Approve",
+    "review": "Review",
+    "dismiss": "Dismiss",
+    "cancel": "Cancel",
+    "newOrder": "New work order",
+    "lots": "{{count}} lots",
+    "minutes": "{{count}} min"
+  },
+  "status": {
+    "risk": "At risk",
+    "delayed": "Delayed",
+    "booked": "Booked",
+    "onPlan": "On plan"
+  },
+  "risk": {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High"
+  },
+  "filter": {
+    "all": "All",
+    "alerts": "Alerts",
+    "machines": "Machines",
+    "stores": "Stores"
+  },
+  "header": {
+    "search": "Search work orders, machines…",
+    "monitoring": "Monitoring {{total}}",
+    "approvals": "{{count}} approvals"
+  },
+  "map": {
+    "zone": {
+      "warehouse": "Raw material store",
+      "dryer": "Dryer",
+      "moldA": "Molding zone A",
+      "moldB": "Molding zone B",
+      "trim": "Trimming",
+      "qc": "QC",
+      "fg": "Finished goods"
+    },
+    "legend": {
+      "onPlan": "On plan",
+      "slow": "Bottleneck",
+      "proposed": "AI proposed"
+    },
+    "lateBy": "+{{count}} min · M-07",
+    "onTimeVia": "On time · {{machine}}"
+  },
+  "hero": {
+    "flagged": "Planning Agent flagged",
+    "approved": "Machine change approved",
+    "justNow": "just now",
+    "minutesAgo": "{{count}} min ago",
+    "route": "Molding {{machine}} → QC handover",
+    "window": "Window",
+    "etaNow": "ETA now",
+    "latePlan": "+{{count}} min vs plan",
+    "withMove": "With machine change",
+    "inWindow": "Inside window",
+    "saved": "Time saved",
+    "via": "via {{machine}}",
+    "cycle": "Cycle time",
+    "oee": "OEE",
+    "moldTemp": "Mold temperature",
+    "output": "Output",
+    "detour": "Move to {{machine}}",
+    "detourSave": "−{{count}} min"
+  },
+  "timeline": {
+    "title": "Machine timeline",
+    "subtitle": "Today 08:00–16:00 · {{count}} machines",
+    "dispatchNote": "Today 08:00–16:00 · AI suggestions are dashed",
+    "head": "Machine",
+    "open": "Open dispatch"
+  },
+  "dash": {
+    "date": "Saturday, Oct 3 · 11:58",
+    "greeting": "Good morning, {{name}}",
+    "subtitle": "Here's what needs your attention across today's production.",
+    "liveFloor": "Live shop floor",
+    "machinesRunning": "{{count}} machines running",
+    "kpi": {
+      "open": "Open work orders",
+      "running": "In production",
+      "done": "Completed today",
+      "late": "Delayed",
+      "risk": "At risk",
+      "exception": "Exceptions",
+      "aiWatching": "AI watching",
+      "critical": "{{count}} critical"
+    },
+    "brief": {
+      "title": "Operations brief",
+      "meta": "6 agents · 92% confidence · 11:58",
+      "headline": "{{count}} work orders may miss their delivery windows. The rest of the plant is on plan.",
+      "causes": "Why · contributing causes",
+      "proposes": "Proposes · needs your approval",
+      "review": "Review recommendations",
+      "activity": "View AI activity"
+    }
+  },
+  "dispatch": {
+    "queue": "Dispatch queue",
+    "queueMeta": "{{total}} orders · {{decide}} need a decision today",
+    "autoAssign": "Auto-assign {{count}}",
+    "currentAt": "{{machine}} · current",
+    "proposedAt": "{{machine}} · proposed",
+    "approveMove": "Approve machine change",
+    "compare": "Compare",
+    "moved": "Machine changed",
+    "needYou": "{{count}} actions need you",
+    "approveFirst": "Approve first",
+    "autoHandled": "Auto-handled · no approval needed",
+    "actionApproved": "Action {{no}} approved",
+    "actionDismissed": "Action {{no}} dismissed"
+  },
+  "approve": {
+    "title": "Approve machine change?",
+    "description": "Move {{id}} from {{from}} to {{to}}. The current machine carries a {{count}}-minute delay.",
+    "current": "Current · {{machine}}",
+    "proposed": "Proposed · {{machine}}",
+    "misses": "Misses window",
+    "stamp": "APPROVED",
+    "impact": {
+      "expected": "Expected impact",
+      "extra": "Additional cost",
+      "customer": "Customer impact",
+      "operator": "Operator"
+    },
+    "audit": "Logged to the audit trail with your name, the agent reasoning and the outcome.",
+    "reject": "Reject",
+    "details": "Review details",
+    "confirm": "Approve action",
+    "toast": "{{id}} moved to {{machine}}"
+  },
+  "assign": {
+    "title": "Auto-assign {{count}} orders?",
+    "description": "Matched by hours left, distance to station and on-time history. Nothing reaches operators until you confirm.",
+    "stat": {
+      "orders": "Orders",
+      "ordersNote": "11 ready · 1 needs a mold slot",
+      "people": "Operators",
+      "peopleNote": "All within working hours",
+      "walk": "Empty walking",
+      "walkNote": "Less than the manual plan"
+    },
+    "col": {
+      "order": "Work order",
+      "who": "Operator",
+      "why": "Why this match",
+      "fit": "Fit"
+    },
+    "book": "Book",
+    "more": "Show {{count}} more matches",
+    "audit": "Logged to the audit trail with your name",
+    "confirm": "Assign {{count}} orders",
+    "toast": "{{count}} orders assigned"
+  },
+  "wo": {
+    "title": "Work order {{id}}",
+    "share": "Share status",
+    "call": "Call shift lead",
+    "lots": "Production lots · {{mold}}",
+    "lotsMeta": "{{done}} of {{total}} lots done",
+    "stable": "stable",
+    "lot": {
+      "done": "Done",
+      "running": "Running",
+      "wait": "Waiting"
+    },
+    "po": "PO / Mold",
+    "start": "Started",
+    "product": "Product",
+    "shiftLeft": "Shift time left",
+    "riskOpen": "Delivery risk · awaiting approval",
+    "riskResolved": "Delivery risk · machine changed",
+    "agent": {
+      "what": "What happened",
+      "why": "Why",
+      "recommendation": "Recommendation"
+    },
+    "canSave": "Time you can save by approving",
+    "approvedBy": "Approved by {{name}}",
+    "viewOnFloor": "View on shop floor",
+    "timeline": "Work order timeline"
+  },
+  "share": {
+    "title": "Share live status",
+    "description": "Send {{customer}} a link to {{id}}. They see the live status and ETA, never your rates or other orders.",
+    "link": "Tracking link",
+    "copy": "Copy link",
+    "copied": "Copied",
+    "recipients": "Send to",
+    "addPerson": "Add someone by email or phone",
+    "visibility": "What they can see",
+    "see": {
+      "status": "Production status and ETA",
+      "statusNote": "Updates every 2 minutes",
+      "temp": "Mold temperature",
+      "tempNote": "Set point and the last 6 hours",
+      "operator": "Operator name and phone",
+      "operatorNote": "Off by default for operator privacy"
+    },
+    "expires": "Link expires",
+    "expiresValue": "24 hours after delivery",
+    "footNote": "You can turn the link off at any time",
+    "send": "Send link",
+    "sendTo": "Send to {{name}}",
+    "toast": "Link sent to {{count}} recipient(s)"
+  },
+  "live": {
+    "running": "Running now",
+    "runningMeta": "{{count}} machines · updated 45s ago",
+    "filter": {
+      "all": "All",
+      "machines": "Machines",
+      "orders": "Work orders",
+      "late": "Delayed",
+      "risk": "At risk",
+      "done": "Completed"
+    },
+    "liveMeta": "Live · {{order}} · 45s ago",
+    "toQc": "QC handover",
+    "inProduction": "In production",
+    "inRange": "In range",
+    "progress": "Progress",
+    "started": "Started {{time}}",
+    "window": "Window {{window}}",
+    "confidence": "{{count}}% confidence",
+    "agentApproved": "Machine change approved by {{name}}",
+    "agentApprovedNote": "Remaining lots move to {{machine}}. New ETA {{eta}}, inside the delivery window. The customer has the update.",
+    "agentPending": "Machine change proposed",
+    "agentPendingNote": "Moving to {{machine}} finishes {{count}} min earlier and keeps the window.",
+    "viewOrder": "View work order"
+  },
+  "order": {
+    "title": "New work order",
+    "crumbNew": "New",
+    "required": "This field is required",
+    "saveDraft": "Save draft",
+    "create": "Create work order",
+    "reading": "Reading {{file}}…",
+    "filledFrom": "Filled from {{customer}} purchase order",
+    "filledMeta": "{{count}} fields filled · AI filled fields are tinted",
+    "needsCheck": "{{count}} needs a check",
+    "replaceFile": "Replace file",
+    "pasteEmail": "Paste email",
+    "s1": {
+      "title": "Customer and reference",
+      "subtitle": "Who it is for and how they reference it"
+    },
+    "s2": {
+      "title": "Production and delivery",
+      "subtitle": "Machine M-12 · about 5 hours"
+    },
+    "s3": {
+      "title": "Product and material",
+      "subtitle": "What is produced and what it needs"
+    },
+    "addStep": "Add a step",
+    "produce": "Production",
+    "deliver": "Delivery",
+    "f": {
+      "customer": "Customer",
+      "contact": "Contact",
+      "customerPo": "Customer PO",
+      "billTo": "Payment terms",
+      "machine": "Machine",
+      "date": "Date",
+      "window": "Window",
+      "deliverTo": "Deliver to",
+      "product": "Product",
+      "qty": "Quantity (pcs)",
+      "material": "Material",
+      "mold": "Mold",
+      "note": "Special instructions"
+    },
+    "windowWarning": "Receiving closes at 14:30 on Mondays. Change to {{window}}?",
+    "useWindow": "Use this window",
+    "draft": "Draft",
+    "pendingValue": "Pending",
+    "pieces": "pcs",
+    "agentSuggests": "Dispatch Agent suggests",
+    "suggestedCost": "Suggested unit cost",
+    "useCost": "Use cost",
+    "marketRange": "Market ฿5.60–฿6.90 · last 30 days",
+    "onTimeRate": "{{rate}} on time",
+    "assignWhenCreate": "Assign {{name}} when I create this work order",
+    "agentWarning": "M-12 is booked after 14:00 on Mondays. An 08:00 start keeps the delivery window safe.",
+    "updates": {
+      "title": "Customer updates",
+      "notifyBooking": "Booking confirmation",
+      "notifyBookingNote": "Email to the contact with the PO and window",
+      "notifySms": "ETA updates by SMS",
+      "notifySmsNote": "Sent by Customer Agent under policy",
+      "note": "Nothing is sent or assigned until you create the work order"
+    },
+    "toast": "{{id}} created"
+  },
+  "seq": {
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "week": "Week",
+    "export": "Export plan",
+    "apply": "Apply optimized sequence",
+    "currentPlan": "Current plan",
+    "optimized": "AI optimized",
+    "better": "A better sequence is available",
+    "col": {
+      "metric": "Metric",
+      "current": "Current",
+      "optimized": "Optimized",
+      "change": "Change"
+    },
+    "metric": {
+      "changeover": "Changeover time",
+      "runtime": "Run time",
+      "scrap": "Changeover scrap",
+      "onTime": "Jobs in window",
+      "energy": "Energy"
+    },
+    "applyTomorrow": "Apply to tomorrow",
+    "edit": "Edit sequence",
+    "keep": "Keep current",
+    "toast": "New sequence applied to {{id}}"
+  },
+  "edit": {
+    "title": "Edit sequence on {{id}}",
+    "description": "Drag to reorder. The Planning Agent rechecks windows, hours and changeover time as you go.",
+    "warning": "Your order differs from the agent's. It may add changeover time and push some jobs outside their windows.",
+    "moved": "Moved",
+    "addJob": "Add a job",
+    "useAgent": "Use the agent order · {{total}}",
+    "footNote": "{{name}} gets the new order tonight",
+    "save": "Save sequence",
+    "toast": "Sequence saved"
+  },
+  "inbox": {
+    "templates": "Templates",
+    "newMessage": "New message",
+    "aiDrafts": "AI drafts",
+    "today": "Today",
+    "agentDraft": "Customer Agent · Draft",
+    "sent": "Customer Agent · Sent",
+    "edit": "Edit",
+    "send": "Send",
+    "order": "Work order",
+    "customer": "Customer",
+    "c": {
+      "account": "Account",
+      "prefers": "Prefers",
+      "health": "Health",
+      "threads": "Open threads"
+    },
+    "summary": "Thread summary",
+    "replies": "Suggested replies"
+  },
+  "msg": {
+    "title": "New message",
+    "description": "Write it yourself or start from the Customer Agent's draft. Nothing sends until you press Send.",
+    "to": "To",
+    "addPeople": "Add people",
+    "channel": "Channel",
+    "email": "Email",
+    "about": "About",
+    "subject": "Subject",
+    "message": "Message",
+    "footNote": "Drafted from {{about}} · edits are yours",
+    "sendEmail": "Send email",
+    "sendSms": "Send SMS",
+    "toast": "Message sent to {{name}}"
+  }
+}
