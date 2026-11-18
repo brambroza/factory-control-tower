@@ -1,6 +1,8 @@
 import { lazy, Suspense } from 'react';
 import { Outlet, Navigate, useRoutes } from 'react-router-dom';
 
+import { paths } from 'src/routes/paths';
+
 import { FactoryLayout } from 'src/layouts/factory';
 
 import { LoadingScreen } from 'src/components/loading-screen';
@@ -20,7 +22,7 @@ const FactoryInboxPage = lazy(() => import('src/pages/factory/inbox'));
 
 /**
  * Route tree ของ starter
- * - `/` หน้า demo สำหรับตรวจ theme
+ * - `/` พาไป `/factory` · `/theme` หน้า demo สำหรับตรวจ theme
  * - `/factory/*` module ตัวอย่าง (layout มี Suspense + page transition ของตัวเอง)
  * หน้าใหม่: เพิ่ม `lazy(() => import('src/pages/<x>'))` แล้วใส่ใน `children`
  */
@@ -33,7 +35,10 @@ export function Router() {
           <Outlet />
         </Suspense>
       ),
-      children: [{ index: true, element: <DemoPage /> }],
+      children: [
+        { index: true, element: <Navigate to={paths.factory.root} replace /> },
+        { path: 'theme', element: <DemoPage /> },
+      ],
     },
     {
       path: 'factory',
@@ -48,6 +53,6 @@ export function Router() {
         { path: 'inbox', element: <FactoryInboxPage /> },
       ],
     },
-    { path: '*', element: <Navigate to="/" replace /> },
+    { path: '*', element: <Navigate to={paths.factory.root} replace /> },
   ]);
 }

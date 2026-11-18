@@ -10,7 +10,7 @@ const ROOTS = {
  */
 export const paths = {
   demo: {
-    root: '/',
+    root: '/theme',
   },
   // module ตัวอย่าง "ศูนย์ควบคุมการผลิต" — ดู src/sections/factory
   factory: {
